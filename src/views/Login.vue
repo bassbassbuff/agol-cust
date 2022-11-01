@@ -97,45 +97,41 @@
 
           <p v-if="incorrectAuth">Incorrect Username</p>
           <form v-on:submit.prevent="login">
-          <div class="field">
-          <label>Username</label>
-            <div class="form-group">
-              <input
-                type="text"
-                name="username"
-                id="user"
-                v-model="username"
-                class="input"
-              />
-            </div>
+            <div class="field">
+              <label>Username</label>
+              <div class="form-group">
+                <input
+                  type="text"
+                  name="username"
+                  id="user"
+                  v-model="username"
+                  class="input"
+                />
+              </div>
             </div>
             <div class="field">
-            <label>Password</label>
-            <div class="form-group">
-              
-              <input
-                type="password"
-                name="password"
-                id="pass"
-                v-model="password"
-                class="input"
-              />
-            </div>
+              <label>Password</label>
+              <div class="form-group">
+                <input
+                  type="password"
+                  name="password"
+                  id="pass"
+                  v-model="password"
+                  class="input"
+                />
+              </div>
             </div>
             <div class="field">
-            <div class="form-group">
-              <button type="submit" class="btn btn-lg btn-primarybtn-block">
-                Login
-              </button>
+              <div class="form-group">
+                <button type="submit" class="">Login</button>
+              </div>
             </div>
-          </div>
           </form>
         </div>
       </div>
     </div>
   </div>
 </template>
-
 <script>
 import { mapActions, mapGetters } from "vuex";
 

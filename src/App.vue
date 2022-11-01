@@ -1,4 +1,6 @@
 <template>
+<NavBar    
+  />
   <div id="nav">
     | <router-link to="/">Home</router-link> |
     <router-link to="/orders">Orders</router-link> |
@@ -20,11 +22,12 @@
 // import { mapGetters } from 'vuex';
 // import axios from 'axios';
 import Account from "./components/Account.vue";
-
+import NavBar from './components/Navigation/NavBar.vue';
 export default {
   name: "App",
   components: {
     Account,
+    NavBar
   },
   beforeCreate() {
     this.$store.commit("auth/initializeStore");
